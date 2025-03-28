@@ -18,7 +18,18 @@ Objectives
 Identify aircraft models with the lowest accident risk.
 Analyze key factors contributing to aviation accidents.
 Assess accident severity trends based on operational and environmental conditions.
-
+### Visualize the accident occurence caused by 'Broad.phase.of.flight'
+![image](https://github.com/user-attachments/assets/ed3d5393-444e-44c4-ba26-9d61b6350fd2)
+During Landing, Takeoff, Cruise, Maneuverings and Approach have a significantly higher number of recorded accidents.
+### Analyze 'Make' and 'Total.Fatal.Injuries' to understand how make affected fatalities during accidents
+![image](https://github.com/user-attachments/assets/bdddf623-941e-4e19-b0dd-0d3b505ac759)
+Cessna, Boeing, Piper and Beech Aircraft Make Have Significantly More Fatalities
+Commercial airliners Airbus and Mcdonnell Douglas generally have low fatality-per-accident.
+### Grouping by Number.of.Engines and Model, summing Total.Fatal.Injuries
+![image](https://github.com/user-attachments/assets/06ed4d6c-5eb0-4ff2-adf5-d2a5dda8edb1)
+From the Graph, Boeing 737-222 model has one of the highest recorded fatal injuries
+Some models have hundreds of fatalities, while others have only a few despite having one engine.
+For Example Airbus 320 and R44 have significantly lower fatal injuries but also have one engine This means that Model of Aircraft play a big role in determining total fatalities.
 Technologies Used
 Python
 Pandas
@@ -52,13 +63,6 @@ missing_percent = df.isnull().sum() / len(df) * 100
 print(missing_percent.sort_values(ascending=False))
 
 Basic Data Insights
-
-# Display dataset information
-df.info()
-
-# Display summary statistics
-df.describe()
-
 Insights & Findings
 
 Identifies high-risk and low-risk aircraft based on historical accident data.
